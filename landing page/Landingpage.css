@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.7;
+}
+
+.header {
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(./img/how-to-set-up-a-vpn-on-your-home-router.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  opacity: 0.9;
+}
+
+.navbar {
+  height: 120px;
+  width: 100%;
+}
+
+.navbar .logoimg {
+  height: 100%;
+  width: 180px;
+  float: left;
+  display: inline;
+  margin-left: 5%;
+  transform: scale(1.8);
+}
+
+.navbar a:link,
+.navbar a:visited {
+  color: #e4e4e4;
+}
+
+.navbar::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header-content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-content h1 {
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(20, 169, 206, 0.877);
+  font-family: 'EB Garamond', serif;
+}
+
+.header-content p {
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #000000;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(29, 122, 33, 0.945);
+}
+
+.button,
+.button-sec {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  margin: 2vw;
+  font-weight: 700;
+  border-radius: 10rem;
+  background: #1c7401;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 5px 10px 10px 0 rgb(1, 109, 46);
+}
+
+.button-sec:hover,
+.button:hover {
+  color: rgb(255, 255, 255);
+  background-color: orangered;
+  box-shadow: 5px 10px 10px 0 rgb(109, 44, 1);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 2vw;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2vw;
+}
+
+.img-box {
+  width: 35%;
+  height: auto;
+  margin: 2vw;
+}
+
+.text-box {
+  padding: 3vw;
+  flex: 1;
+  font-family: 'Poltawski Nowy', serif;
+}
+
+.text-box h2 {
+  font-size: 2rem;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 3rem;
+  margin-bottom: 2vw;
+}
+
+.text-box p {
+  font-size: 1rem;
+  color: #201e1ed0;
+  line-height: 1.5;
+  margin-bottom: 2vw;
+}
+
+.icons a {
+  display: inline;
+  margin: 1vw;
+  margin-bottom: 2vw;
+  text-decoration: none;
+}
+
+.icons i {
+  background-color: #4b494915;
+  color: #050000;
+  padding: 5px;
+  border-radius: 6px;
+  width: 10%;
+}
+
+.apps {
+  color: #0f7017;
+  display: block;
+  margin-top: 2vw;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.features {
+  color: #000000;
+  padding: 2vw;
+  text-align: center;
+  font-family: 'Poltawski Nowy', serif;
+  display: flex;
+
+}
+
+.features h2 {
+  font-size: 1.5rem;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 2vw;
+}
+
+.features p {
+  font-size: 1rem;
+  color: #353434;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 2vw;
+}
+
+.features img {
+  width: 35%;
+  margin: 2vw;
+}
+
+.mid-link {
+  text-align: center;
+  margin: 2vw;
+}
+
+.mid-link a {
+  display: inline-block;
+  color: #0f7017;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+}
+
+.mid-link a:hover {
+  color: #0f7017;
+  text-decoration: underline;
+}
+
+.gif {
+  width: 100%;
+  padding: 1vw;
+  height: 90vh;
+}
+
+.locations {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: #ddd9d9d7;
+  text-align: center;
+}
+
+.locations h2 {
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgb(175, 201, 176);
+}
+
+.numbers {
+  text-align: center;
+  margin: 2vw;
+}
+
+.numbers p {
+  position: relative;
+  display: block;
+  margin: 2vw;
+  text-align: center;
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 600;
+  display: block;
+}
+
+.numbers span {
+  display: block;
+  color: #1a74bd;
+  font-size: x-large;
+  font-weight: 700;
+  font-size: 30px;
+  margin: 2vw;
+  text-align: center;
+}
+
+/* Responsive Layout */
+@media (max-width: 991px) {
+  .container,
+  .row {
+    padding: 0 5vw;
+  }
+  
+  .img-box,
+  .features img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-content h1 {
+    font-size: 36px;
+  }
+  
+  .header-content p {
+    font-size: 18px;
+  }
+  
+  .button,
+  .button-sec {
+    padding: 0.5em 1em;
+    margin: 1vw;
+  }
+  
+  .text-box {
+    padding: 2vw;
+  }
+  
+  .text-box h2 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 1vw;
+  }
+  
+  .text-box p {
+    font-size: 0.875rem;
+    margin-bottom: 1vw;
+  }
+  
+  .icons a {
+    margin: 0.5vw;
+    margin-bottom: 1vw;
+  }
+  
+  .icons i {
+    padding: 3px;
+  }
+  .features{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .features p {
+    font-size: 0.875rem;
+    margin-bottom: 1vw;
+  }
+  
+  .mid-link a {
+    font-size: 0.875rem;
+  }
+  
+  .gif {
+    padding: 0.5vw;
+  }
+  
+  .numbers p {
+    font-size: 14px;
+    margin: 1vw;
+  }
+  
+  .numbers span {
+    font-size: 24px;
+    margin: 1vw;
+  }
+}
